@@ -1,0 +1,249 @@
+/* General styles */
+.background{
+    background: linear-gradient(to bottom, rgba(73, 73, 97, 0.3), rgba(95, 89, 89, 0.2)), 
+                url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: bottom right;
+    background-position: 20% 90%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+}
+
+/* Main container for the three sections */
+.main-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Left section: Input section */
+.left-side {
+    flex: 1;
+    background: #2c3a4a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input section styles */
+.lat-input, .lon-input {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.lat-input:focus, .lon-input:focus {
+    outline: none;
+    border-color: #91bce2;
+    box-shadow: 0 0 0 3px rgba(145, 188, 226, 0.2);
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: #c97ec3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #bc1f6b;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}
+
+/* Right section: Weather output section */
+.right-side {
+    flex: 1;
+    background: #2c3a4a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-info {
+    width: 100%;
+}
+
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    color: #e2d5e7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.weather-info h2 {
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    padding: 8px;
+    background: #45566b;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/* Cities section styles */
+.cities-section {
+    flex: 1;
+    background: #2c3a4a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.cities-title {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.city-card {
+    background: #45566b;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.city-card:hover {
+    background: #5a6b7d;
+    transform: translateY(-2px);
+    border-color: #91bce2;
+    box-shadow: 0 4px 12px rgba(145, 188, 226, 0.3);
+}
+
+.city-name {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.city-coords {
+    color: #b8c5d1;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .left-side, .cities-section, .right-side {
+        flex: none;
+        width: 100%;
+    }
+    
+    .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .heading {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*Social Media Icons*/
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: absolute;
+  bottom: 500px;
+  left: 23%;
+}
+
+.social-icons a {
+  color: #c0a2af; 
+  font-size: 3.5rem;
+  transition: color 0.2s;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px; 
+  margin-right: auto;
+}
+
+.social-icons a:hover {
+  color: #622054; 
+}
