@@ -227,23 +227,23 @@
 .social-icons {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  position: absolute;
-  bottom: 500px;
-  left: 23%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -150px;
+  margin-left: -980px;
+  width: auto;
+  position: relative;
 }
 
 .social-icons a {
-  color: #c0a2af; 
+  color: #f0bed4; 
   font-size: 3.5rem;
-  transition: color 0.2s;
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  margin-top: 60px; 
-  margin-right: auto;
+  transition: color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
   color: #622054; 
+  transform: scale(1.1);
 }

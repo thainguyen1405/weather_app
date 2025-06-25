@@ -149,21 +149,21 @@ function Weather() {
                         </div>
                     )}
                 </div>
-                
-                {/*Social Media Icons*/}
-                <div className = "social-icons">
-                    <a href = "https://github.com/thainguyen1405"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
+            </div>
+            
+            {/*Social Media Icons*/}
+            <div className = "social-icons">
+                <a href = "https://github.com/thainguyen1405"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
 
-                    <a href = "https://www.linkedin.com/in/thainguyen1405/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </div>
+                <a href = "https://www.linkedin.com/in/thainguyen1405/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
             </div>
         </div>
     )
