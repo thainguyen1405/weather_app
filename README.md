@@ -4,7 +4,7 @@ SkyView is a simple and beautiful weather web application built using **React**.
 
 ##  Check my web here
 Check out the deployed app on Vercel:  
-🔗 [SkyView Weather App](https://vercel.com/thai-nguyens-projects-68688c8f/weather-app/8Wg6khLGBe5ax84TsVEsiytZTKey)
+🔗 [SkyView Weather App]([https://vercel.com/thai-nguyens-projects-68688c8f/weather-app/8Wg6khLGBe5ax84TsVEsiytZTKey](https://weather-app-thai-nguyens-projects-68688c8f.vercel.app/))
 
 ## Include
 - 🔍 Enter **latitude** and **longitude** to get weather data
