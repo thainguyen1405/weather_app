@@ -1,0 +1,15 @@
+# SkyView – Weather App 🌤️
+
+SkyView is a simple and beautiful weather web application built using **React**. It allows users to quickly retrieve real-time weather information for any location by entering latitude and longitude coordinates, or by selecting from a list of major global cities.
+
+## 🌐 Live Now
+Check out the deployed app on Vercel:  
+🔗 [SkyView Weather App](https://vercel.com/thai-nguyens-projects-68688c8f/weather-app/8Wg6khLGBe5ax84TsVEsiytZTKey)
+
+## ✨ Features
+- 🔍 Enter **latitude** and **longitude** to get weather data
+- 🏙️ Clickable list of **quick-select cities**
+- 🌦️ Real-time weather information displayed instantly
+- 🎨 Stylish UI with responsive design
+- 🚀 Deployed using **Vercel**
+
